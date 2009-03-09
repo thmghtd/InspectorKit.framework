@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class InspectorPane;
 
 @interface InspectorPaneHead : NSView {
+	IBOutlet InspectorPane *pane;
 	BOOL pressed;
 }
 

@@ -8,14 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class InspectorPane;
 
 @interface InspectorPaneContainer : NSView {
 	NSString *autosaveName;
+	
+	float topMargin;
 }
 
 @property (retain) NSString *autosaveName;
-
-- (void) adjustIBWindowIfNeeded;
-- (void) adjustActualWindowToFitContainer;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "InspectorPaneHead.h"
-
+#import "InspectorPane.h"
 
 @implementation InspectorPaneHead
 
@@ -15,6 +15,18 @@
 	if (self = [super initWithFrame:frame]) {
 	}
 	return self;
+}
+
+- (id) initWithCoder:(NSCoder*)coder {
+	if (self = [super initWithCoder:coder]) {
+		pane = [coder decodeObjectForKey:@"pane"];
+	}
+	return self;
+}
+
+- (void) encodeWithCoder:(NSCoder*)coder {
+	[super encodeWithCoder:coder];
+	[coder encodeObject:pane forKey:@"pane"];
 }
 
 - (BOOL)mouseDownCanMoveWindow {
@@ -59,6 +71,26 @@
 		[[NSColor colorWithCalibratedWhite:0.0 alpha:0.07] setFill];
 		[NSBezierPath fillRect:[self bounds]];
 	}
+}
+
+- (void) mouseDown:(NSEvent*)event {
+	pressed = YES;
+	[self setNeedsDisplay:YES];
+}
+
+- (void) mouseDragged:(NSEvent*)event {
+	NSPoint point = [self convertPoint:[event locationInWindow] fromView:nil];
+	pressed = NSPointInRect(point, [self bounds]);
+	
+	[self setNeedsDisplay:YES];
+}
+
+- (void) mouseUp:(NSEvent*)event {
+	if (pressed)
+		[pane toggleCollapsed:self];
+	
+	pressed = NO;
+	[self setNeedsDisplay:YES];
 }
 
 @end

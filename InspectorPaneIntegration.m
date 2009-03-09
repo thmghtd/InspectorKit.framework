@@ -7,7 +7,7 @@
 //
 
 #import <InterfaceBuilderKit/InterfaceBuilderKit.h>
-#import <Inspector/InspectorPane.h>
+#import <InspectorKit/InspectorPane.h>
 #import "InspectorPaneInspector.h"
 
 @implementation InspectorPane ( InspectorPane )

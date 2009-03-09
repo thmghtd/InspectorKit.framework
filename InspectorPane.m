@@ -10,6 +10,10 @@
 
 #import "NSWindow+Geometry.h"
 
+#import "InspectorPaneContainer.h"
+
+#import <QuartzCore/QuartzCore.h>
+
 @implementation InspectorPane
 
 @synthesize resizable;
@@ -54,56 +58,77 @@
 }
 
 - (void) awakeFromNib {
-//	distanceFromTop = NSHeight([[self superview] frame]) - NSMaxY([self frame]);
-	//NSLog(@"awaking! %f , %f", NSHeight([[self superview] frame]), NSMaxY([self frame]));
+	uncollapsedHeight = NSHeight([self frame]);
 	
 	[[titleTextField cell] setBackgroundStyle:NSBackgroundStyleRaised];
-	
-	if (SDIsInIB) {
-//		[titleTextField setSelectable:YES];
-//		[titleTextField setEditable:YES];
-	}
+}
+
+- (BOOL)mouseDownCanMoveWindow {
+	return NO;
+}
+
+- (void) animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {
+	[paneBody setAutoresizesSubviews:YES];
 }
 
 - (IBAction) toggleCollapsed:(id)sender {
 	[self toggleCollapsedWithAnimation:YES];
 }
 
-- (void) toggleCollapsedWithAnimation:(BOOL)animates {
-	NSRect newFrame = [self frame];
+- (void) toggleCollapsedWithAnimation:(BOOL)animate {
+	if (SDIsInIB)
+		return;
 	
-	if (collapsed) {
-		newFrame.origin.y = NSHeight([[self superview] frame]) - distanceFromTop - uncollapsedHeight;
-		newFrame.size.height = uncollapsedHeight;
-	}
-	else {
-		uncollapsedHeight = [self frame].size.height;
-		newFrame.origin.y = NSHeight([[self superview] frame]) - distanceFromTop - 17.0;
-		newFrame.size.height = 17.0;
-	}
-	
-	id view = (animates ? [self animator] : self);
-	
-	[view setFrame:newFrame];
+	[collapseButton setState:collapsed];
 	
 	collapsed = !collapsed;
 	
-	//	NSSize size = [[[self window] contentView] frame].size;
-	//	size.height += 20;
-	//	[[self window] setContentViewSize:size display:YES animate:YES];
+	//[[self container] togglePane:self collapsed:collapsed];
+	
+	NSSize newSize = [paneHead frame].size;
+	if (collapsed == NO)
+		newSize.height = uncollapsedHeight;
+	else
+		newSize.height -= 1;
+	
+	NSRect newFrame = [self frame];
+	newFrame.origin.y += newFrame.size.height - newSize.height;
+	newFrame.size = newSize;
+	
+	id view = self;
+	if (animate) {
+		view = [self animator];
+		
+		BOOL slowMotion = ([[NSApp currentEvent] modifierFlags] & NSShiftKeyMask) != 0;
+		
+		CABasicAnimation *animation = [CABasicAnimation animation];
+		
+		animation.duration = 0.15;
+		if (slowMotion)
+			animation.duration = animation.duration * 8.0;
+		
+		animation.delegate = self;
+		animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+		[view setAnimations:[NSDictionary dictionaryWithObject:animation forKey:@"frameSize"]];
+	}
+	
+	[paneBody setAutoresizesSubviews:NO];
+	
+	[view setFrame:newFrame];
+	
+	// forgot what this code was for, or why its commented out.
+	// dont care enough to uncomment it and test
+	
+//	if (animate == NO)
+//		[[self bodyView] setAutoresizesSubviews:YES];
 }
 
 - (void) drawRect:(NSRect)rect {
-	return;
-	
-	if (SDIsInIB) {
-		NSRect frame = [self bounds];
-		//frame.origin.x += 0.5;
-		//frame.origin.y += 0.5;
-		
-		[[[NSColor blueColor] colorWithAlphaComponent:0.5] setStroke];
-		[NSBezierPath strokeRect:frame];
-	}
+	//[[[NSColor purpleColor] colorWithAlphaComponent:0.5] drawSwatchInRect:[self bounds]];
+}
+
+- (InspectorPaneContainer*) container {
+	return (InspectorPaneContainer*)[self superview];
 }
 
 @end

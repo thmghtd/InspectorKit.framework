@@ -23,29 +23,34 @@
 
 /* Begin PBXBuildFile section */
 		13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
-		546DEAF3067F632A0098DCC4 /* Inspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* Inspector.framework */; };
+		546DEAF3067F632A0098DCC4 /* InspectorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */; };
 		54D33B2906778E3300C9C163 /* InspectorPaneView.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 54D33B2806778E3300C9C163 /* InspectorPaneView.classdescription */; };
 		8D1AC96C0486D14A00FE50C9 /* InspectorPaneInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C577FE90428111CA0C5A /* InspectorPaneInspector.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
-		B009DAF90F632B95001D05F2 /* InspectorLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = B009DAF80F632B95001D05F2 /* InspectorLibrary.xib */; };
+		B009DAF90F632B95001D05F2 /* InspectorKitLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = B009DAF80F632B95001D05F2 /* InspectorKitLibrary.xib */; };
 		B009DB010F632D31001D05F2 /* InspectorPaneHead.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DAFF0F632D31001D05F2 /* InspectorPaneHead.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B009DB020F632D31001D05F2 /* InspectorPaneHead.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB000F632D31001D05F2 /* InspectorPaneHead.m */; };
 		B009DB050F632D41001D05F2 /* InspectorPaneBody.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DB030F632D41001D05F2 /* InspectorPaneBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B009DB060F632D41001D05F2 /* InspectorPaneBody.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB040F632D41001D05F2 /* InspectorPaneBody.m */; };
-		B009DBED0F635A8B001D05F2 /* Inspector.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* Inspector.framework */; };
-		B0C16B940F6445A000170ED2 /* RSRTVArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C16B920F6445A000170ED2 /* RSRTVArrayController.m */; };
+		B009DBED0F635A8B001D05F2 /* InspectorKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */; };
 		B0D9D6A30F64133900AFB9DC /* InspectorPaneContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D9D6A10F64133900AFB9DC /* InspectorPaneContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0D9D6A40F64133900AFB9DC /* InspectorPaneContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D9D6A20F64133900AFB9DC /* InspectorPaneContainer.m */; };
 		B0D9D6B10F64138800AFB9DC /* InspectorPaneContainer.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = B0D9D6B00F64138400AFB9DC /* InspectorPaneContainer.classdescription */; };
 		B0D9D6B60F64147200AFB9DC /* InspectorPaneContainerIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D9D6B50F64147200AFB9DC /* InspectorPaneContainerIntegration.m */; };
 		B0D9D8200F64251400AFB9DC /* InspectorPaneContainerInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D9D81F0F64251400AFB9DC /* InspectorPaneContainerInspector.m */; };
 		B0D9D8220F64253200AFB9DC /* InspectorPaneContainerInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D9D8210F64253200AFB9DC /* InspectorPaneContainerInspector.xib */; };
+		B0DDDACC0F646CF900BC1B93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DDDACB0F646CF900BC1B93 /* QuartzCore.framework */; };
+		B0DDDB7C0F6480F700BC1B93 /* InspectorContainer-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DDDB7A0F6480F700BC1B93 /* InspectorContainer-icon.png */; };
+		B0DDDB7D0F6480F700BC1B93 /* InspectorPane-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DDDB7B0F6480F700BC1B93 /* InspectorPane-icon.png */; };
+		B0DDDB880F6481AD00BC1B93 /* RSRTVArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDDB870F6481AD00BC1B93 /* RSRTVArrayController.m */; };
+		B0DDDC070F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */; };
+		B0DDDC080F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */; };
 		B0F681720F638AED00FA129E /* NSWindow+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F681700F638AED00FA129E /* NSWindow+Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0F681730F638AED00FA129E /* NSWindow+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F681710F638AED00FA129E /* NSWindow+Geometry.m */; };
 		C044829F0C3328F4006E818F /* InspectorPaneIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = C044829E0C3328F4006E818F /* InspectorPaneIntegration.m */; };
 		C059ACDD0A49E0A20079D97B /* InspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = C059ACDB0A49E0A20079D97B /* InspectorPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C059ACDE0A49E0A20079D97B /* InspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = C059ACDC0A49E0A20079D97B /* InspectorPane.m */; };
-		C08787290A49DE9A00E9B151 /* InspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* InspectorPlugin.m */; };
+		C08787290A49DE9A00E9B151 /* InspectorKitPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* InspectorKitPlugin.m */; };
 		C0A47C500A523B730004BDC3 /* InspectorPaneInspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05B20D80A48CB530099B9E5 /* InspectorPaneInspector.xib */; };
 		C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */; };
 /* End PBXBuildFile section */
@@ -81,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B009DBED0F635A8B001D05F2 /* Inspector.framework in Copy Frameworks */,
+				B009DBED0F635A8B001D05F2 /* InspectorKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,26 +94,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0259C576FE90428111CA0C5A /* InspectorPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InspectorPlugin.m; sourceTree = "<group>"; };
+		0259C576FE90428111CA0C5A /* InspectorKitPlugin.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InspectorKitPlugin.m; sourceTree = "<group>"; };
 		0259C577FE90428111CA0C5A /* InspectorPaneInspector.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneInspector.m; sourceTree = "<group>"; };
-		0259C57AFE90428111CA0C5A /* InspectorPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = InspectorPlugin.h; sourceTree = "<group>"; };
+		0259C57AFE90428111CA0C5A /* InspectorKitPlugin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = InspectorKitPlugin.h; sourceTree = "<group>"; };
 		0259C57BFE90428111CA0C5A /* InspectorPaneInspector.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = InspectorPaneInspector.h; sourceTree = "<group>"; };
 		13F8B88807B434F6008AE28D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		13F8B88907B434F6008AE28D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* InspectorPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPlugin_Prefix.pch; sourceTree = "<group>"; };
-		53DF68FD067E5B5A0090B5B0 /* Inspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InspectorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DF68FE067E5B5A0090B5B0 /* InspectorFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InspectorFramework-Info.plist"; sourceTree = "<group>"; };
 		54D33B2806778E3300C9C163 /* InspectorPaneView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InspectorPaneView.classdescription; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* InspectorPlugin.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorPlugin.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		B009DAF80F632B95001D05F2 /* InspectorLibrary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectorLibrary.xib; sourceTree = "<group>"; };
+		8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InspectorKitPlugin.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B009DAF80F632B95001D05F2 /* InspectorKitLibrary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectorKitLibrary.xib; sourceTree = "<group>"; };
 		B009DAFF0F632D31001D05F2 /* InspectorPaneHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneHead.h; sourceTree = "<group>"; };
 		B009DB000F632D31001D05F2 /* InspectorPaneHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneHead.m; sourceTree = "<group>"; };
 		B009DB030F632D41001D05F2 /* InspectorPaneBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneBody.h; sourceTree = "<group>"; };
 		B009DB040F632D41001D05F2 /* InspectorPaneBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneBody.m; sourceTree = "<group>"; };
-		B0C16B920F6445A000170ED2 /* RSRTVArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSRTVArrayController.m; path = ../../Downloads/RSRTVArrayController/RSRTVArrayController.m; sourceTree = SOURCE_ROOT; };
-		B0C16B930F6445A000170ED2 /* RSRTVArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSRTVArrayController.h; path = ../../Downloads/RSRTVArrayController/RSRTVArrayController.h; sourceTree = SOURCE_ROOT; };
 		B0D9D6A10F64133900AFB9DC /* InspectorPaneContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneContainer.h; sourceTree = "<group>"; };
 		B0D9D6A20F64133900AFB9DC /* InspectorPaneContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneContainer.m; sourceTree = "<group>"; };
 		B0D9D6B00F64138400AFB9DC /* InspectorPaneContainer.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InspectorPaneContainer.classdescription; sourceTree = "<group>"; };
@@ -116,6 +119,13 @@
 		B0D9D81E0F64251400AFB9DC /* InspectorPaneContainerInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneContainerInspector.h; sourceTree = "<group>"; };
 		B0D9D81F0F64251400AFB9DC /* InspectorPaneContainerInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneContainerInspector.m; sourceTree = "<group>"; };
 		B0D9D8210F64253200AFB9DC /* InspectorPaneContainerInspector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectorPaneContainerInspector.xib; sourceTree = "<group>"; };
+		B0DDDACB0F646CF900BC1B93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		B0DDDB7A0F6480F700BC1B93 /* InspectorContainer-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InspectorContainer-icon.png"; sourceTree = "<group>"; };
+		B0DDDB7B0F6480F700BC1B93 /* InspectorPane-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InspectorPane-icon.png"; sourceTree = "<group>"; };
+		B0DDDB860F6481AD00BC1B93 /* RSRTVArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRTVArrayController.h; sourceTree = "<group>"; };
+		B0DDDB870F6481AD00BC1B93 /* RSRTVArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRTVArrayController.m; sourceTree = "<group>"; };
+		B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+StrokeExtensions.h"; sourceTree = "<group>"; };
+		B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+StrokeExtensions.m"; sourceTree = "<group>"; };
 		B0F681700F638AED00FA129E /* NSWindow+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+Geometry.h"; path = "../sdinspector/NSWindow+Geometry.h"; sourceTree = SOURCE_ROOT; };
 		B0F681710F638AED00FA129E /* NSWindow+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+Geometry.m"; path = "../sdinspector/NSWindow+Geometry.m"; sourceTree = SOURCE_ROOT; };
 		C044829E0C3328F4006E818F /* InspectorPaneIntegration.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneIntegration.m; sourceTree = "<group>"; };
@@ -132,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */,
+				B0DDDACC0F646CF900BC1B93 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
-				546DEAF3067F632A0098DCC4 /* Inspector.framework in Frameworks */,
+				546DEAF3067F632A0098DCC4 /* InspectorKit.framework in Frameworks */,
 				C0D069560A49DF9100C95564 /* InterfaceBuilderKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,19 +180,20 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		131E8FE8067F80F40006E0CE /* Resources */ = {
+		131E8FE8067F80F40006E0CE /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				B009DAF80F632B95001D05F2 /* InspectorLibrary.xib */,
+				B009DAF80F632B95001D05F2 /* InspectorKitLibrary.xib */,
 				C05B20D80A48CB530099B9E5 /* InspectorPaneInspector.xib */,
 				B0D9D8210F64253200AFB9DC /* InspectorPaneContainerInspector.xib */,
 			);
-			name = Resources;
+			name = XIBs;
 			sourceTree = "<group>";
 		};
 		13F8B6FD07B43410008AE28D /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0DDDACB0F646CF900BC1B93 /* QuartzCore.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 				C0D069550A49DF9100C95564 /* InterfaceBuilderKit.framework */,
 			);
@@ -201,8 +213,8 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* InspectorPlugin.ibplugin */,
-				53DF68FD067E5B5A0090B5B0 /* Inspector.framework */,
+				8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */,
+				53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,7 +234,8 @@
 				54D33B2406778DD400C9C163 /* Class Descriptions */,
 				54D33B2506778DF000C9C163 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
-				131E8FE8067F80F40006E0CE /* Resources */,
+				131E8FE8067F80F40006E0CE /* XIBs */,
+				B0DDDB7E0F6480FA00BC1B93 /* Library Icons */,
 			);
 			name = Plugin;
 			sourceTree = "<group>";
@@ -249,14 +262,14 @@
 		54D33B2506778DF000C9C163 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0259C57AFE90428111CA0C5A /* InspectorPlugin.h */,
-				0259C576FE90428111CA0C5A /* InspectorPlugin.m */,
+				0259C57AFE90428111CA0C5A /* InspectorKitPlugin.h */,
+				0259C576FE90428111CA0C5A /* InspectorKitPlugin.m */,
 				0259C57BFE90428111CA0C5A /* InspectorPaneInspector.h */,
 				0259C577FE90428111CA0C5A /* InspectorPaneInspector.m */,
 				B0D9D81E0F64251400AFB9DC /* InspectorPaneContainerInspector.h */,
 				B0D9D81F0F64251400AFB9DC /* InspectorPaneContainerInspector.m */,
-				B0C16B930F6445A000170ED2 /* RSRTVArrayController.h */,
-				B0C16B920F6445A000170ED2 /* RSRTVArrayController.m */,
+				B0DDDB860F6481AD00BC1B93 /* RSRTVArrayController.h */,
+				B0DDDB870F6481AD00BC1B93 /* RSRTVArrayController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -266,9 +279,20 @@
 			children = (
 				B0F681700F638AED00FA129E /* NSWindow+Geometry.h */,
 				B0F681710F638AED00FA129E /* NSWindow+Geometry.m */,
+				B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */,
+				B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */,
 				C0894DA40C32F4C100401507 /* Classes */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		B0DDDB7E0F6480FA00BC1B93 /* Library Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDDB7A0F6480F700BC1B93 /* InspectorContainer-icon.png */,
+				B0DDDB7B0F6480F700BC1B93 /* InspectorPane-icon.png */,
+			);
+			name = "Library Icons";
 			sourceTree = "<group>";
 		};
 		C0894DA40C32F4C100401507 /* Classes */ = {
@@ -298,15 +322,16 @@
 				B009DB050F632D41001D05F2 /* InspectorPaneBody.h in Headers */,
 				B0F681720F638AED00FA129E /* NSWindow+Geometry.h in Headers */,
 				B0D9D6A30F64133900AFB9DC /* InspectorPaneContainer.h in Headers */,
+				B0DDDC070F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		53DF68FC067E5B5A0090B5B0 /* Inspector */ = {
+		53DF68FC067E5B5A0090B5B0 /* InspectorKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Inspector" */;
+			buildConfigurationList = C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "InspectorKit" */;
 			buildPhases = (
 				53DF68F8067E5B5A0090B5B0 /* Headers */,
 				53DF68F9067E5B5A0090B5B0 /* Resources */,
@@ -317,9 +342,9 @@
 			);
 			dependencies = (
 			);
-			name = Inspector;
+			name = InspectorKit;
 			productName = InspectorPaneFramework;
-			productReference = 53DF68FD067E5B5A0090B5B0 /* Inspector.framework */;
+			productReference = 53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8D1AC9600486D14A00FE50C9 /* InspectorPlugin */ = {
@@ -339,7 +364,7 @@
 			name = InspectorPlugin;
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = InspectorPane;
-			productReference = 8D1AC9740486D14A00FE50C9 /* InspectorPlugin.ibplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* InspectorKitPlugin.ibplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -356,7 +381,7 @@
 			targets = (
 				53DF6901067E5B8E0090B5B0 /* All */,
 				8D1AC9600486D14A00FE50C9 /* InspectorPlugin */,
-				53DF68FC067E5B5A0090B5B0 /* Inspector */,
+				53DF68FC067E5B5A0090B5B0 /* InspectorKit */,
 			);
 		};
 /* End PBXProject section */
@@ -375,9 +400,11 @@
 			files = (
 				54D33B2906778E3300C9C163 /* InspectorPaneView.classdescription in Resources */,
 				C0A47C500A523B730004BDC3 /* InspectorPaneInspector.xib in Resources */,
-				B009DAF90F632B95001D05F2 /* InspectorLibrary.xib in Resources */,
+				B009DAF90F632B95001D05F2 /* InspectorKitLibrary.xib in Resources */,
 				B0D9D6B10F64138800AFB9DC /* InspectorPaneContainer.classdescription in Resources */,
 				B0D9D8220F64253200AFB9DC /* InspectorPaneContainerInspector.xib in Resources */,
+				B0DDDB7C0F6480F700BC1B93 /* InspectorContainer-icon.png in Resources */,
+				B0DDDB7D0F6480F700BC1B93 /* InspectorPane-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +420,7 @@
 				B009DB060F632D41001D05F2 /* InspectorPaneBody.m in Sources */,
 				B0F681730F638AED00FA129E /* NSWindow+Geometry.m in Sources */,
 				B0D9D6A40F64133900AFB9DC /* InspectorPaneContainer.m in Sources */,
+				B0DDDC080F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,12 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08787290A49DE9A00E9B151 /* InspectorPlugin.m in Sources */,
+				C08787290A49DE9A00E9B151 /* InspectorKitPlugin.m in Sources */,
 				8D1AC96C0486D14A00FE50C9 /* InspectorPaneInspector.m in Sources */,
 				C044829F0C3328F4006E818F /* InspectorPaneIntegration.m in Sources */,
 				B0D9D6B60F64147200AFB9DC /* InspectorPaneContainerIntegration.m in Sources */,
 				B0D9D8200F64251400AFB9DC /* InspectorPaneContainerInspector.m in Sources */,
-				B0C16B940F6445A000170ED2 /* RSRTVArrayController.m in Sources */,
+				B0DDDB880F6481AD00BC1B93 /* RSRTVArrayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +447,12 @@
 		};
 		53DF6905067E5B930090B5B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53DF68FC067E5B5A0090B5B0 /* Inspector */;
+			target = 53DF68FC067E5B5A0090B5B0 /* InspectorKit */;
 			targetProxy = 53DF6904067E5B930090B5B0 /* PBXContainerItemProxy */;
 		};
 		546DEAF0067F62F70098DCC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53DF68FC067E5B5A0090B5B0 /* Inspector */;
+			target = 53DF68FC067E5B5A0090B5B0 /* InspectorKit */;
 			targetProxy = 546DEAEF067F62F70098DCC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,7 +473,7 @@
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "InspectorFramework-Info.plist";
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				PRODUCT_NAME = Inspector;
+				PRODUCT_NAME = InspectorKit;
 				SKIP_INSTALL = NO;
 			};
 			name = Debug;
@@ -463,7 +491,7 @@
 				INFOPLIST_FILE = "InspectorFramework-Info.plist";
 				INSTALL_MODE_FLAG = "go-w,a+rX";
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				PRODUCT_NAME = Inspector;
+				PRODUCT_NAME = InspectorKit;
 				SKIP_INSTALL = NO;
 			};
 			name = Release;
@@ -484,7 +512,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = InspectorPlugin;
+				PRODUCT_NAME = InspectorKitPlugin;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Debug;
@@ -503,7 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = InspectorPlugin_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = InspectorPlugin;
+				PRODUCT_NAME = InspectorKitPlugin;
 				WRAPPER_EXTENSION = ibplugin;
 			};
 			name = Release;
@@ -569,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "Inspector" */ = {
+		C056397F08A954F8003078D8 /* Build configuration list for PBXNativeTarget "InspectorKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C056398008A954F8003078D8 /* Debug */,

@@ -10,6 +10,7 @@
 
 #define SDIsInIB (NSClassFromString(@"IBDocument") != Nil)
 
+@class InspectorPaneContainer;
 @class InspectorPaneHead;
 @class InspectorPaneBody;
 
@@ -36,5 +37,7 @@
 - (IBAction) toggleCollapsed:(id)sender;
 
 - (void) toggleCollapsedWithAnimation:(BOOL)animates;
+
+- (InspectorPaneContainer*) container;
 
 @end

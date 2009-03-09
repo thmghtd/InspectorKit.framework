@@ -11,16 +11,12 @@
 
 @implementation InspectorPaneBody
 
-- (id)initWithFrame:(NSRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
-    }
-    return self;
+- (BOOL)acceptsFirstMouse:(NSEvent *)theEvent {
+	return YES;
 }
 
-- (void)drawRect:(NSRect)rect {
-    // Drawing code here.
+- (void) drawRect:(NSRect)rect {
+	NSDrawWindowBackground([self bounds]);
 }
 
 @end

@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.thoughtfultree.InspectorPlugin</string>
+	<string>com.thoughtfultree.InspectorKitPlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,11 +17,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.8</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSPrincipalClass</key>
-	<string>InspectorPlugin</string>
+	<string>InspectorKitPlugin</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>© Thoughtful Tree Software, 2009</string>
 </dict>

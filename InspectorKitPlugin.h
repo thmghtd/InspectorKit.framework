@@ -8,7 +8,7 @@
 
 #import <InterfaceBuilderKit/InterfaceBuilderKit.h>
 
-@interface InspectorPlugin : IBPlugin {
+@interface InspectorKitPlugin : IBPlugin {
 
 }
 
