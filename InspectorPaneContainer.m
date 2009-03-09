@@ -13,8 +13,12 @@
 
 @interface InspectorPaneContainer ( Private )
 - (void) adjustActualWindowToFitContainer;
-- (void) togglePane:(InspectorPane*)pane collapsed:(BOOL)collapsed;
 - (void) repositionViewsIgnoringView:(NSView*)viewToIgnore;
+
+// get rid of these 2
+- (void) setHeight:(float)newHeight forPane:(NSView*)view;
+- (void) togglePane:(InspectorPane*)pane collapsed:(BOOL)collapsed;
+
 @end
 
 @implementation InspectorPaneContainer
@@ -103,10 +107,14 @@
 	[self setFrame:selfFrame];
 }
 
-// this apparently is only here for persistence.. its thus horribly named :/
+// these 2 methods are apparently only here for persistence.. thus they're horribly named :/
 - (void) togglePane:(InspectorPane*)pane collapsed:(BOOL)collapsed {
 	//int index = [[self subviews] indexOfObject:view];
 	//[collapsedSubviewIndexes replaceObjectAtIndex:index withObject:[NSNumber numberWithBool:collapsed]];
+}
+- (void) setHeight:(float)newHeight forPane:(NSView*)view {
+//	int index = [[self subviews] indexOfObject:view];
+//	[subviewHeights replaceObjectAtIndex:index withObject:[NSNumber numberWithFloat:newHeight]];
 }
 
 - (void) repositionViewsIgnoringView:(NSView*)viewToIgnore {

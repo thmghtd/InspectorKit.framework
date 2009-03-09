@@ -206,21 +206,23 @@
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<string>allowsFloats</string>
 										<string>attributedStringForZero</string>
+										<string>decimalSeparator</string>
 										<string>formatterBehavior</string>
 										<string>groupingSeparator</string>
-										<string>locale</string>
 										<string>maximum</string>
 										<string>minimum</string>
 										<string>negativeFormat</string>
 										<string>positiveFormat</string>
+										<string>textAttributesForZero</string>
 										<string>usesGroupingSeparator</string>
+										<string>zeroSymbol</string>
 									</object>
 									<object class="NSMutableArray" key="dict.values">
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<integer value="1" id="9"/>
-										<object class="NSAttributedString" id="310148558">
+										<object class="NSAttributedString">
 											<string key="NSString">0</string>
-											<object class="NSDictionary" key="NSAttributes" id="1015838502">
+											<object class="NSDictionary" key="NSAttributes" id="415649043">
 												<bool key="EncodedWithXMLCoder">YES</bool>
 												<object class="NSArray" key="dict.sortedKeys">
 													<bool key="EncodedWithXMLCoder">YES</bool>
@@ -230,37 +232,45 @@
 												</object>
 											</object>
 										</object>
-										<integer value="1000" id="517535102"/>
+										<string>.</string>
+										<integer value="1040"/>
 										<string>,</string>
-										<object class="NSLocale" id="1001290163">
-											<string key="NS.identifier"/>
-										</object>
 										<real value="1.000000e+04" id="667828742"/>
 										<real value="0.000000e+00" id="743034181"/>
 										<string>-0</string>
 										<string>0</string>
-										<reference ref="743034181"/>
+										<reference ref="415649043"/>
+										<boolean value="NO" id="6"/>
+										<string>0</string>
 									</object>
 								</object>
 								<string key="NS.positiveformat">0</string>
 								<string key="NS.negativeformat">-0</string>
 								<nil key="NS.positiveattrs"/>
 								<nil key="NS.negativeattrs"/>
-								<reference key="NS.zero" ref="310148558"/>
+								<object class="NSAttributedString" key="NS.zero">
+									<string key="NSString">0</string>
+									<reference key="NSAttributes" ref="415649043"/>
+								</object>
 								<object class="NSAttributedString" key="NS.nil">
-									<string key="NSString"/>
+									<nil key="NSString"/>
 								</object>
 								<object class="NSAttributedString" key="NS.nan">
 									<string key="NSString">NaN</string>
-									<reference key="NSAttributes" ref="1015838502"/>
+									<reference key="NSAttributes" ref="415649043"/>
 								</object>
 								<reference key="NS.min" ref="743034181"/>
 								<reference key="NS.max" ref="667828742"/>
-								<nil key="NS.rounding"/>
+								<object class="NSDecimalNumberHandler" key="NS.rounding">
+									<int key="NS.roundingmode">3</int>
+									<bool key="NS.raise.overflow">YES</bool>
+									<bool key="NS.raise.underflow">YES</bool>
+									<bool key="NS.raise.dividebyzero">YES</bool>
+								</object>
 								<string key="NS.decimal">.</string>
 								<string key="NS.thousand">,</string>
 								<bool key="NS.hasthousands">NO</bool>
-								<bool key="NS.localized">NO</bool>
+								<bool key="NS.localized">YES</bool>
 								<bool key="NS.allowsfloats">YES</bool>
 							</object>
 							<reference key="NSControlView" ref="385174481"/>
@@ -287,51 +297,63 @@
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<string>allowsFloats</string>
 										<string>attributedStringForZero</string>
+										<string>decimalSeparator</string>
 										<string>formatterBehavior</string>
 										<string>groupingSeparator</string>
-										<string>locale</string>
 										<string>maximum</string>
 										<string>minimum</string>
 										<string>negativeFormat</string>
 										<string>positiveFormat</string>
+										<string>textAttributesForZero</string>
 										<string>usesGroupingSeparator</string>
+										<string>zeroSymbol</string>
 									</object>
 									<object class="NSMutableArray" key="dict.values">
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<reference ref="9"/>
-										<object class="NSAttributedString" id="42906102">
+										<object class="NSAttributedString">
 											<string key="NSString">0</string>
-											<reference key="NSAttributes" ref="1015838502"/>
+											<reference key="NSAttributes" ref="415649043"/>
 										</object>
-										<reference ref="517535102"/>
+										<string>.</string>
+										<integer value="1040"/>
 										<string>,</string>
-										<reference ref="1001290163"/>
 										<reference ref="667828742"/>
-										<reference ref="743034181"/>
+										<real value="0.000000e+00" id="602843440"/>
 										<string>-0</string>
 										<string>0</string>
-										<reference ref="743034181"/>
+										<reference ref="415649043"/>
+										<reference ref="6"/>
+										<string>0</string>
 									</object>
 								</object>
 								<string key="NS.positiveformat">0</string>
 								<string key="NS.negativeformat">-0</string>
 								<nil key="NS.positiveattrs"/>
 								<nil key="NS.negativeattrs"/>
-								<reference key="NS.zero" ref="42906102"/>
+								<object class="NSAttributedString" key="NS.zero">
+									<string key="NSString">0</string>
+									<reference key="NSAttributes" ref="415649043"/>
+								</object>
 								<object class="NSAttributedString" key="NS.nil">
-									<string key="NSString"/>
+									<nil key="NSString"/>
 								</object>
 								<object class="NSAttributedString" key="NS.nan">
 									<string key="NSString">NaN</string>
-									<reference key="NSAttributes" ref="1015838502"/>
+									<reference key="NSAttributes" ref="415649043"/>
 								</object>
-								<reference key="NS.min" ref="743034181"/>
+								<reference key="NS.min" ref="602843440"/>
 								<reference key="NS.max" ref="667828742"/>
-								<nil key="NS.rounding"/>
+								<object class="NSDecimalNumberHandler" key="NS.rounding">
+									<int key="NS.roundingmode">3</int>
+									<bool key="NS.raise.overflow">YES</bool>
+									<bool key="NS.raise.underflow">YES</bool>
+									<bool key="NS.raise.dividebyzero">YES</bool>
+								</object>
 								<string key="NS.decimal">.</string>
 								<string key="NS.thousand">,</string>
 								<bool key="NS.hasthousands">NO</bool>
-								<bool key="NS.localized">NO</bool>
+								<bool key="NS.localized">YES</bool>
 								<bool key="NS.allowsfloats">YES</bool>
 							</object>
 							<reference key="NSControlView" ref="629393840"/>
@@ -949,7 +971,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">../InspectorPane.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../Inspector.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

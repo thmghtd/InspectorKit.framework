@@ -28,6 +28,10 @@
 	BOOL collapsed;
 	float uncollapsedHeight;
 	float distanceFromTop;
+	
+	// for resizing
+	BOOL pressed;
+	float heightFromBottom;
 }
 
 @property BOOL resizable;
@@ -35,9 +39,5 @@
 @property float maxHeight;
 
 - (IBAction) toggleCollapsed:(id)sender;
-
-- (void) toggleCollapsedWithAnimation:(BOOL)animates;
-
-- (InspectorPaneContainer*) container;
 
 @end
