@@ -10,7 +10,7 @@ Created by Steven Degutis - [www.degutis.org](http://www.degutis.org)
 
 If you use this code, I would appreciate it if you added me to the credits, with a link to my website. Preferred format is
 
-Photo Taker created by Steven Degutis - [www.degutis.org](http://www.degutis.org)
+InspectorKit created by Steven Degutis - [www.degutis.org](http://www.degutis.org)
 
 ## Services
 
