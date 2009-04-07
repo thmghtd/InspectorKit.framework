@@ -45,8 +45,6 @@
 		B0DDDB880F6481AD00BC1B93 /* RSRTVArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDDB870F6481AD00BC1B93 /* RSRTVArrayController.m */; };
 		B0DDDC070F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */; };
 		B0DDDC080F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */; };
-		B0F681720F638AED00FA129E /* NSWindow+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F681700F638AED00FA129E /* NSWindow+Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0F681730F638AED00FA129E /* NSWindow+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F681710F638AED00FA129E /* NSWindow+Geometry.m */; };
 		C044829F0C3328F4006E818F /* InspectorPaneIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = C044829E0C3328F4006E818F /* InspectorPaneIntegration.m */; };
 		C059ACDD0A49E0A20079D97B /* InspectorPane.h in Headers */ = {isa = PBXBuildFile; fileRef = C059ACDB0A49E0A20079D97B /* InspectorPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C059ACDE0A49E0A20079D97B /* InspectorPane.m in Sources */ = {isa = PBXBuildFile; fileRef = C059ACDC0A49E0A20079D97B /* InspectorPane.m */; };
@@ -112,6 +110,8 @@
 		B009DB000F632D31001D05F2 /* InspectorPaneHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneHead.m; sourceTree = "<group>"; };
 		B009DB030F632D41001D05F2 /* InspectorPaneBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneBody.h; sourceTree = "<group>"; };
 		B009DB040F632D41001D05F2 /* InspectorPaneBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneBody.m; sourceTree = "<group>"; };
+		B04BCF280F8B8B6A00EEAF04 /* NSWindow+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Geometry.h"; sourceTree = "<group>"; };
+		B04BCF290F8B8B6A00EEAF04 /* NSWindow+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Geometry.m"; sourceTree = "<group>"; };
 		B0D9D6A10F64133900AFB9DC /* InspectorPaneContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPaneContainer.h; sourceTree = "<group>"; };
 		B0D9D6A20F64133900AFB9DC /* InspectorPaneContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneContainer.m; sourceTree = "<group>"; };
 		B0D9D6B00F64138400AFB9DC /* InspectorPaneContainer.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InspectorPaneContainer.classdescription; sourceTree = "<group>"; };
@@ -126,8 +126,6 @@
 		B0DDDB870F6481AD00BC1B93 /* RSRTVArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRTVArrayController.m; sourceTree = "<group>"; };
 		B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+StrokeExtensions.h"; sourceTree = "<group>"; };
 		B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+StrokeExtensions.m"; sourceTree = "<group>"; };
-		B0F681700F638AED00FA129E /* NSWindow+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+Geometry.h"; path = "../sdinspector/NSWindow+Geometry.h"; sourceTree = SOURCE_ROOT; };
-		B0F681710F638AED00FA129E /* NSWindow+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+Geometry.m"; path = "../sdinspector/NSWindow+Geometry.m"; sourceTree = SOURCE_ROOT; };
 		C044829E0C3328F4006E818F /* InspectorPaneIntegration.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InspectorPaneIntegration.m; sourceTree = "<group>"; };
 		C059ACDB0A49E0A20079D97B /* InspectorPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorPane.h; sourceTree = "<group>"; };
 		C059ACDC0A49E0A20079D97B /* InspectorPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorPane.m; sourceTree = "<group>"; };
@@ -277,8 +275,8 @@
 		54D33B2C06778E4400C9C163 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B0F681700F638AED00FA129E /* NSWindow+Geometry.h */,
-				B0F681710F638AED00FA129E /* NSWindow+Geometry.m */,
+				B04BCF280F8B8B6A00EEAF04 /* NSWindow+Geometry.h */,
+				B04BCF290F8B8B6A00EEAF04 /* NSWindow+Geometry.m */,
 				B0DDDC050F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h */,
 				B0DDDC060F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m */,
 				C0894DA40C32F4C100401507 /* Classes */,
@@ -320,7 +318,6 @@
 				C059ACDD0A49E0A20079D97B /* InspectorPane.h in Headers */,
 				B009DB010F632D31001D05F2 /* InspectorPaneHead.h in Headers */,
 				B009DB050F632D41001D05F2 /* InspectorPaneBody.h in Headers */,
-				B0F681720F638AED00FA129E /* NSWindow+Geometry.h in Headers */,
 				B0D9D6A30F64133900AFB9DC /* InspectorPaneContainer.h in Headers */,
 				B0DDDC070F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.h in Headers */,
 			);
@@ -418,7 +415,6 @@
 				C059ACDE0A49E0A20079D97B /* InspectorPane.m in Sources */,
 				B009DB020F632D31001D05F2 /* InspectorPaneHead.m in Sources */,
 				B009DB060F632D41001D05F2 /* InspectorPaneBody.m in Sources */,
-				B0F681730F638AED00FA129E /* NSWindow+Geometry.m in Sources */,
 				B0D9D6A40F64133900AFB9DC /* InspectorPaneContainer.m in Sources */,
 				B0DDDC080F64CE8B00BC1B93 /* NSBezierPath+StrokeExtensions.m in Sources */,
 			);
