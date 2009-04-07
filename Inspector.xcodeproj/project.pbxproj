@@ -33,6 +33,7 @@
 		B009DB050F632D41001D05F2 /* InspectorPaneBody.h in Headers */ = {isa = PBXBuildFile; fileRef = B009DB030F632D41001D05F2 /* InspectorPaneBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B009DB060F632D41001D05F2 /* InspectorPaneBody.m in Sources */ = {isa = PBXBuildFile; fileRef = B009DB040F632D41001D05F2 /* InspectorPaneBody.m */; };
 		B009DBED0F635A8B001D05F2 /* InspectorKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 53DF68FD067E5B5A0090B5B0 /* InspectorKit.framework */; };
+		B04BCF4E0F8B930D00EEAF04 /* NSWindow+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = B04BCF290F8B8B6A00EEAF04 /* NSWindow+Geometry.m */; };
 		B0D9D6A30F64133900AFB9DC /* InspectorPaneContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D9D6A10F64133900AFB9DC /* InspectorPaneContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0D9D6A40F64133900AFB9DC /* InspectorPaneContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D9D6A20F64133900AFB9DC /* InspectorPaneContainer.m */; };
 		B0D9D6B10F64138800AFB9DC /* InspectorPaneContainer.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = B0D9D6B00F64138400AFB9DC /* InspectorPaneContainer.classdescription */; };
@@ -412,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04BCF4E0F8B930D00EEAF04 /* NSWindow+Geometry.m in Sources */,
 				C059ACDE0A49E0A20079D97B /* InspectorPane.m in Sources */,
 				B009DB020F632D31001D05F2 /* InspectorPaneHead.m in Sources */,
 				B009DB060F632D41001D05F2 /* InspectorPaneBody.m in Sources */,
